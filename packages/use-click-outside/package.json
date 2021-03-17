@@ -1,0 +1,24 @@
+{
+  "name": "@react-utils/use-click-outside",
+  "version": "0.1.0",
+  "description": "detect click outside",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "transpile": "babel src -d dist --ignore '**/*.spec.js'",
+    "jest": "jest --coverage --verbose --color"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
