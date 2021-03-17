@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 
-const useDetectClickOutside = (element: HTMLElement, onDetectOutsideClick: () => void, shouldListening: boolean) => {
+const useDetectClickOutside = (element: { current: HTMLElement }, onDetectOutsideClick: () => void, shouldListening: boolean = true) => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (element && !element.contains(event.target as Element)) {
+      if (element.current && !element.current.contains(event.target as Element)) {
         onDetectOutsideClick()
       }
     }
