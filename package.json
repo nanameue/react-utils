@@ -39,6 +39,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "bump-version": "lerna version --conventional-commits --yes"
   }
 }
