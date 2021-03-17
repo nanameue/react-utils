@@ -2,6 +2,19 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1"
   }
 }
