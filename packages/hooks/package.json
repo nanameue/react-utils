@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "hooks",
+  "name": "@nanameue/hooks",
   "author": "bk",
   "module": "dist/hooks.esm.js",
   "size-limit": [
