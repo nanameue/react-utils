@@ -1,5 +1,1 @@
-import { default as useClickOutside } from './useClickOutside';
-
-export default {
-  useClickOutside,
-};
+export { default as useClickOutside } from './useClickOutside';
