@@ -1,6 +1,5 @@
 {
   "name": "@nanameue/react-utils",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -41,5 +40,8 @@
     "build": "lerna run build",
     "test": "lerna run test",
     "bump-version": "lerna version --conventional-commits --yes"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

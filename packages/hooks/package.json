@@ -63,5 +63,9 @@
       "path": "dist/hooks.esm.js",
       "limit": "10 KB"
     }
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "35f84dc36fa14c955fd4b06a430d6c66dcafd5ea"
 }
