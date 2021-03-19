@@ -15,18 +15,13 @@
     "build": "tsdx build",
     "test": "jest --coverage --verbose --color",
     "test:watch": "jest --coverage --verbose --color --watch",
-    "lint": "tsdx lint",
+    "lint": "prettier --check \"src/**/*.(js|ts|tsx)\"",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
   },
   "jest": {
     "setupFiles": [
@@ -45,12 +40,6 @@
       "node"
     ]
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "name": "@nanameue/hooks",
   "author": "bk",
   "module": "dist/hooks.esm.js",
@@ -67,5 +56,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "35f84dc36fa14c955fd4b06a430d6c66dcafd5ea"
+  "gitHead": "35f84dc36fa14c955fd4b06a430d6c66dcafd5ea",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }

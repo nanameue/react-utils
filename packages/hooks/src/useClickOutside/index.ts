@@ -1,10 +1,17 @@
 import { useEffect } from 'react'
 
-const useDetectClickOutside = (element: { current: HTMLElement }, onDetectOutsideClick: () => void, shouldListening: boolean = true) => {
+const useClickOutside = (
+  element: { current: HTMLElement },
+  onClickOutside: () => void,
+  shouldListening: boolean = true
+) => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (element.current && !element.current.contains(event.target as Element)) {
-        onDetectOutsideClick()
+      if (
+        element.current &&
+        !element.current.contains(event.target as Element)
+      ) {
+        onClickOutside()
       }
     }
 
@@ -15,7 +22,7 @@ const useDetectClickOutside = (element: { current: HTMLElement }, onDetectOutsid
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [element, shouldListening])
+  }, [element, shouldListening, onClickOutside])
 }
 
-export default useDetectClickOutside
+export default useClickOutside
