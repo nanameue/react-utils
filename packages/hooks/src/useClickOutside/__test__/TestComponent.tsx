@@ -1,13 +1,13 @@
-import React, { useRef } from 'react';
-import useClickOutside from '../index';
+import React, { useRef } from 'react'
+import useClickOutside from '../index'
 
 interface Props {
-  onClickOutside: () => void;
+  onClickOutside: () => void
 }
 
 const TestComponent = ({ onClickOutside }: Props) => {
-  const ref = useRef<HTMLButtonElement | null>(null);
-  useClickOutside(ref as { current: HTMLElement }, onClickOutside);
+  const ref = useRef<HTMLButtonElement | null>(null)
+  useClickOutside(ref as { current: HTMLElement }, onClickOutside)
 
   return (
     <div>
@@ -16,7 +16,7 @@ const TestComponent = ({ onClickOutside }: Props) => {
       </button>
       <button id="outside">outSide</button>
     </div>
-  );
-};
+  )
+}
 
-export default TestComponent;
+export default TestComponent
