@@ -1,6 +1,9 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from 'react'
 import { mount } from 'enzyme'
-// import sinon from 'sinon'
 import TestComponent from './TestComponent'
 
 describe('useModalState', () => {
